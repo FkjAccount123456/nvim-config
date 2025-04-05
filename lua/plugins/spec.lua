@@ -17,7 +17,7 @@ return {
     },
   },
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     opts = {
       scroll = { enabled = false },
       picker = {
@@ -191,4 +191,8 @@ return {
     lazy = true,
     opts = { style = "storm" },
   },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   enabled = false,
+  -- },
 }
