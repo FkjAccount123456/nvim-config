@@ -25,6 +25,7 @@ return {
           proc = false,
         }
       },
+      explorer = { enabled = true },
     },
   },
   {
@@ -126,6 +127,17 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
+      servers = {
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = "basic",
+              },
+            },
+          },
+        },
+      },
     },
   },
   {
@@ -191,8 +203,20 @@ return {
     lazy = true,
     opts = { style = "storm" },
   },
-  -- {
-  --   "nvim-neo-tree/neo-tree.nvim",
-  --   enabled = false,
-  -- },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
+  {
+    "navarasu/onedark.nvim",
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
+  {
+    "catppuccin/nvim", name = "catppuccin",
+  },
 }
